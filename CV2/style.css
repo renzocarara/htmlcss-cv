@@ -1,0 +1,118 @@
+body, html {
+    background-color: black;
+    color: gold;
+    font-family: Trebuchet, Verdana;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: gold;
+    /* applico un'ombra al testo */
+    /* h, v, s, colore --- h e v sono la posizione orizzontale e verticale */
+    /* dell'ombra rispetto al testo, s il grado di sfuocatura dell'ombra */
+    text-shadow: 2px 2px 4px #000000;
+}
+
+h2 {
+    color: lightyellow;
+    font-style: italic;
+    /* applico un'ombra al testo */
+    text-shadow: 2px 2px 4px #000000;
+}
+
+h3 {
+    background-color: gold;
+    /* applico un bordo e poi ne "arrotondo"gli angoli con la proprità border-radius*/
+    border: 3px solid yellow;
+    /* applico un diverso raggio di curvatura per i 4 gli angoli dell'elemento <h3> */
+    /* primo valore per top-left e bottom-right */
+    /* secondo valore per top-right e bottom-left */
+    border-radius: 10px 40px;
+    color: black;
+    padding-left: 20px;
+}
+
+a {
+    color: white;
+}
+
+hr {
+    /* nascondo le hr */
+    display: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin: 0;
+    /* top right bottom left */
+    padding: 15px 15px 15px 15px;
+}
+
+ul {
+    /* uso il quadratino come bullet per le <ul> */
+    list-style-type: square;
+}
+
+img {
+    border: 5px solid gold;
+    /* arrotondo gli angoli del bordo fino a farlo diventare un cerchio */
+    border-radius: 90px;
+}
+
+.header {
+    /* uso come sfondo un gradiente a 3 colori */
+    /* gradatamnete dall'alto verso il basso parte nero diventa giallo e torna nero */
+    background-image: linear-gradient(black, yellow, black);
+    color: black;
+    font-size: 130%;
+    margin: 10px;
+    padding: 20px;
+}
+
+.anagrafica {
+    background-color: black;
+    border: 5px solid khaki;
+    border-bottom: none;
+    /* arrotondo angoli superiori */
+    border-radius: 40px 40px 0 0;
+}
+
+.esperienze {
+    background-color: black;
+    border: 5px solid khaki;
+    border-bottom: none;
+    border-top: none;
+}
+
+.formazione {
+    background-color: black;
+    border: 5px solid khaki;
+    border-bottom: none;
+    border-top: none;
+}
+
+.conoscenze {
+    background-color: black;
+    border: 5px solid khaki;
+    /* arrotondo angoli inferiori */
+    border-radius: 0 0 40px 40px;
+    border-top: none;
+}
+
+.footer {
+    /* come per header uso un gradiente come sfondo */
+    background-image: linear-gradient(black, yellow, black);
+    color: black;
+    font-size: 70%;
+    margin: 10px;
+    padding: 20px;
+}
+
+.footer__privacy {
+    font-style: italic;
+}
